@@ -7,3 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: ${{ github.event.client_payload.command }}
+      env:
+        GIT_COMMITTER_NAME: dtinth-bot
+        GIT_AUTHOR_NAME: dtinth-bot
+        EMAIL: dtinth-bot@users.noreply.github.com
