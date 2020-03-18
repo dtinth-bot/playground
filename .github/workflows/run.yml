@@ -6,5 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: ${{ github.event.client_payload.command }}
+    - run: ${{ github.event.client_payload.command }}
